@@ -3,8 +3,8 @@ x-backend: &common
     image: papermerge/papermerge:3.2.0
     environment:
         PAPERMERGE__SECURITY__SECRET_KEY: 12345
-        PAPERMERGE__AUTH__USERNAME: john
-        PAPERMERGE__AUTH__PASSWORD: hohoho
+        PAPERMERGE__AUTH__USERNAME: ${ENV_PAPERMERGE__AUTH__USERNAME}
+        PAPERMERGE__AUTH__PASSWORD: ${ENV_PAPERMERGE__AUTH__PASSWORD}
         PAPERMERGE__DATABASE__URL: postgresql://scott:tiger@db:5432/mydatabase
         PAPERMERGE__REDIS__URL: redis://redis:6379/0
     volumes:
