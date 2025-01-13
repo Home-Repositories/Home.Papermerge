@@ -16,4 +16,4 @@ echo "Token end"
 
 papermerge-cli --token $TOKEN --host "http://localhost:7020/" me
 papermerge-cli --token $TOKEN --host "http://localhost:7020/" ls --parent-id=ae42169d-22c0-4074-bc6b-a872a7bb64fd
-#papermerge-cli --token $TOKEN --host "http://localhost:12000/" import /home/pawel/bin/Teczki/
+papermerge-cli --token $TOKEN --host "http://localhost:7020/" import /home/pawel/bin/Teczki/
